@@ -32,3 +32,11 @@ for(let i = 0 ; i< rows ; i++){
 		console.log("["+i+"]","["+j+"]"," = "+twoD[i][j])
 	}
 }
+
+let chars = bigHero.characters
+length = chars.length 
+for (let i = 0 ; i < length ; i++){
+		for(char in chars[i]){
+			console.log(char ,chars[i][char])
+		}
+}
