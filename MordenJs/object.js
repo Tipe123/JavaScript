@@ -26,7 +26,10 @@ user ={
 	name:"crystal",
 	age:22,
 	email:"monyemangene.2@gmail.com",
-	blogs:['Why giving up since you have a way','The life of a programmer is amazing'],
+	blogs:[
+		{title:'Why giving up since you have a way',likes:30},
+		{title:'The life of a programmer is amazing',likes:45}
+		],
 	location:"mankwene Limpopo South-africa",
 	login: function(){
 		console.log("user logged in")
@@ -40,17 +43,18 @@ user ={
 	blogChange: function(){
 		for (var i = this.blogs.length - 1; i >= 0; i--) {
 			 if(i === 0){
-			 	this.blogs[i] = "Changed it" ;
+			 	this.blogs[i].title = "Changed it" ;
 			 }else if(i === 1){
-			 	this.blogs[i] ="Changed it tooo";
+			 	this.blogs[i].title ="Changed it tooo";
 			 }
 		}
 	},
 
+	//set function
 	logBlogs: function(){
 		console.log("\nOut put from the end of the list\n")
 		for (var i = this.blogs.length - 1; i >= 0; i--) {
-			 		console.log(this.blogs[i])
+			 		console.log(this.blogs[i].title," \n has liked by ",this.blogs[i].likes," people")
 			 		}
 	}
 }
@@ -62,3 +66,16 @@ user.logBlogs();
 user.blogChange();
 console.log(user.blogs)
 
+
+//Math object
+
+console.log("Math PI number:",Math.PI);
+
+console.log("Math Euler number e:",Math.E)
+
+//random numbers
+
+const random = Math.random();
+
+
+console.log( Math.round(random * 100))
