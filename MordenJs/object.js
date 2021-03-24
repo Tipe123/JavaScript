@@ -78,4 +78,18 @@ console.log("Math Euler number e:",Math.E)
 const random = Math.random();
 
 
-console.log( Math.round(random * 100))
+console.log( Math.round(random * 100) )
+
+//reference values
+
+let userOne = {name: 'ryu',age:40};
+
+userTwo = userOne;
+
+console.log(userOne , "  " , userTwo);
+
+userOne.age = 5420;
+
+console.log(userOne , "  " , userTwo);
+
+//reference values are stored with pointers
