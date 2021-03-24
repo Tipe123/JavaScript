@@ -17,3 +17,6 @@ const bill = (products , tax) =>{
 
 
 console.log(bill([10,15,30],0.2))
+
+//function inside a function
+
